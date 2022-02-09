@@ -19,9 +19,3 @@ function stop() {
     
 }
 
-function playStation() {
-    console.log("playstation started!");
-    mySound = new sound("UATMISSIONSOUND.mp3");
-    mySound.play();
-}
-
