@@ -144,7 +144,32 @@ Mikesael Nieves-->
     <br>
     <br>
 
-    <button class="startButton" onclick="playStation();">Play Sound</button>
+   <!--Location of MP3 file
+--> <audio id="myAudio">
+        <source src="us-lab-background.mp3" type="audio/ogg">
+        <source src="us-lab-background.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <p>Click the buttons to play or pause the audio.</p>
+
+    <!--Play and Pause button for Audio-->
+    <button onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        //play sound when button is pressed
+        function playAudio() {
+            x.play();
+        }
+        //pause sound when button is pressed
+        function pauseAudio() {
+            x.pause();
+        } 
+    </script>
+
    
 
 </body>
